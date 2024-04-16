@@ -5,7 +5,6 @@ public class mathquiz {
     // decalaring fields.
     public String name;
 
-
     // creating scanner for user input.
     Scanner gameinput = new Scanner(System.in);
 
@@ -36,13 +35,13 @@ public class mathquiz {
                 addition();
                 break;
             case 2:
-                subtraction();
+                //subtraction();
                 break;
             case 3:
-                multiplication();
+               // multiplication();
                 break;
             case 4:
-                division();
+               // division();
                 break;
             case 5:
                 System.exit(0);
@@ -55,7 +54,7 @@ public class mathquiz {
             // return methods for the game.
         public void addition(){
 
-        int[][] questions = {{2, 2}, {5, 7}, {10, 3}, {15, 9}, {8, 4}, {12, 6}, {20, 11}, {16, 8}, {25, 13}, {30, 17}};
+        int[][] questions = {{2, 2}, {5, 7}, {10, 3}, {15, 9}, {8, 4}, {12, 6}, {20, 11}, {167, 8}, {25, 13}, {30, 17}};
 
         System.out.println (" Addition Edition!");
 
@@ -63,7 +62,7 @@ public class mathquiz {
         for (int i = 0; i < questions.length; i++) {
             int num1 = questions[i][0];
             int num2 = questions[i][1];
-            System.out.print("Q" + (i + 1) + ": What is " + num1 + " + " + num2 + "? ");
+            System.out.print((i + 1) + ": What is " + num1 + " + " + num2 + "? " +"\n" + "= ");
             double userAnswer = gameinput.nextDouble();
         }
     }
@@ -72,7 +71,7 @@ public class mathquiz {
         mathquiz game = new mathquiz("");
         game.formingoptions();
 
-        System.out.println(game.name + ", Thank you for choosing Izyan math quiz game.");
+        System.out.println("Thank you for choosing Izyan math quiz game.");
     }
 
 
